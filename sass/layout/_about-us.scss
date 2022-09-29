@@ -1,0 +1,33 @@
+.about-us {
+    padding-bottom: 0;
+  
+    
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    width: calc((100% - 90px) / 4);
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    min-height: 120px;
+    border-radius: 4px;
+    background-color: var(--background-section);
+  }
+  
+  &__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  
+  &__text {
+    color: var(--text-color);
+    line-height: 1.71;
+  }
+}

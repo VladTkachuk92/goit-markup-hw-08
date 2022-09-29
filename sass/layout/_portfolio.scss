@@ -1,0 +1,100 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+  }
+  
+  .filter-btn {
+    border: none;
+    padding: 6px 22px;
+    font-family: inherit;
+    background-color: var(--background-section);
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color var(--anim), color var(--anim), box-shadow var(--anim);
+  }
+  
+  .filter-btn.active {
+    background-color: var(--accent-color);
+    color: var(--main-white);
+  }
+  
+  .filter-btn:hover,
+  .filter-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--main-white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  .filter-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow var(--anim);
+  }
+  .filter-link:hover,
+  .filter-link:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .filter-item {
+    flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid #eeeeee;
+  }
+  .filter-title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+  
+  .filter-text {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+  
+  .filter-desc {
+    padding: 20px 24px;
+  }
+
+  .filter-thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transform: translateY(100%);
+  
+    background: rgba(33, 150, 243, 0.9);
+  
+    transition: transform var(--anim);
+  }
+  .overlay-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--main-white);
+  }
+  .filter-item:hover .overlay {
+    transform: translateY(0);
+  }
