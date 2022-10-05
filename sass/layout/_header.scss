@@ -7,7 +7,7 @@
   align-items: center;
 }
 .logo {
-  margin-right: 93px;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,6 +17,12 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  @media screen and (min-width: 768px) {
+    margin-right: 87px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 92px;
+  }
 }
 
 .logo-web {
@@ -24,8 +30,11 @@
 }
 
 .header-nav {
-  display: flex;
-  align-items: center;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav {
@@ -67,12 +76,22 @@
 }
 
 .header-list {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
+  display: none; 
+  
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
+
+ @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 30px;
+}
+  }
 .header-item {
   color: var(--text-color);
   font-weight: 500;
@@ -81,7 +100,11 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  padding: 0;
   gap: 10px;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
 }
 
 .header-item:hover,
