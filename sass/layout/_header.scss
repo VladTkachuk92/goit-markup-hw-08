@@ -1,5 +1,6 @@
 .header {
   border-bottom: 1px solid #eeeeee;
+  
 }
 
 .header .container {
@@ -17,6 +18,7 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  padding: 15px;
   @media screen and (min-width: 768px) {
     margin-right: 87px;
   }
