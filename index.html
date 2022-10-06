@@ -57,8 +57,12 @@
             >
           </li>
         </ul>
-        <button type="button" class="menu-buttons js-open-menu" aria-expanded="false"
-        aria-controls="mobile-menu">
+        <button
+          type="button"
+          class="menu-buttons js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="40" height="40">
             <use href="./images/icons/icons.svg#menu_40px"></use>
           </svg>
@@ -136,12 +140,17 @@
             <li>
               <a href="">
                 <div class="thumb">
-                  <img
-                    src="./images/main/1.jpg"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source media="(min-width: 1200px)" 
+                    srcset="
+                    ./images/main/imgmain1-lg@1x.jpg 1x, 
+                    ./images/main/imgmain1-lg@2x.jpg 2x" />
+                    <img
+                    src="./images/main/imgmain1-lg@1x.jpg"
                     alt="клавіатура та планшет"
                   />
+                  </picture>
+                 
                   <div class="thumb__features">
                     <p class="thumb__text">Десктопні додатки</p>
                   </div>
@@ -151,12 +160,17 @@
             <li>
               <a href="">
                 <div class="thumb">
-                  <img
-                    src="./images/main/2.jpg"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source media="(min-width: 1200px)" 
+                    srcset="
+                    ./images/main/imgmain2-lg@1x.jpg 1x, 
+                    ./images/main/imgmain2-lg@2x.jpg 2x" />
+                    <img
+                    src="./images/main/imgmain2-lg@1x.jpg"
                     alt="телефон та ноутбук"
                   />
+                  </picture>
+             
                   <div class="thumb__features">
                     <p class="thumb__text">Мобільні додатки</p>
                   </div>
@@ -166,7 +180,16 @@
             <li>
               <a href="">
                 <div class="thumb">
-                  <img src="./images/main/3.jpg" width="370" height="294" alt="планшет та стілус" />
+                  <picture>
+                    <source media="(min-width: 1200px)" 
+                    srcset="
+                    ./images/main/imgmain3-lg@1x.jpg 1x, 
+                    ./images/main/imgmain3-lg@2x.jpg 2x" />
+                    <img
+                    src="./images/main/imgmain3-lg@1x.jpg"
+                    alt="планшет та стілус"
+                  />
+                  </picture>
                   <div class="thumb__features">
                     <p class="thumb__text">Дизайнерські рішення</p>
                   </div>
@@ -183,13 +206,26 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="group-list">
             <li class="group-item">
-              <img
-                class="group-item-img"
-                src="./images/team/team-1.jpg"
-                width="270"
-                height="260"
-                alt="наш продакт дизайнер"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img1-lg@1x.jpg 1x, ./images/team/img1-lg@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img1-md@1x.jpg 1x, ./images/team/img1-md@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img1-sm@1x.jpg 1x, ./images/team/img1-sm@2x.jpg 2x"
+                />
+                <img
+                  class="group-item-img"
+                  src="./images/team/img1-sm@1x.jpg"
+                  alt="наш продакт дизайнер"
+                />
+              </picture>
+
               <div class="card">
                 <h3 class="group-title">Ігор Дем'яненко</h3>
                 <p class="group-text" lang="en">Product Designer</p>
@@ -250,13 +286,26 @@
               </div>
             </li>
             <li class="group-item">
-              <img
-                class="group-item-img"
-                src="./images/team/team-2.jpg"
-                width="270"
-                height="260"
-                alt="наш фронтенд розробник "
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img2-lg@1x.jpg 1x, ./images/team/img2-lg@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img2-md@1x.jpg 1x, ./images/team/img2-md@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img2-sm@1x.jpg 1x, ./images/team/img2-sm@2x.jpg 2x"
+                />
+                <img
+                  class="group-item-img"
+                  src="./images/team/img2-sm@1x.jpg"
+                  alt="наш фронтенд розробник "
+                />
+              </picture>
+
               <div class="card">
                 <h3 class="group-title">Ольга Рєпіна</h3>
                 <p class="group-text" lang="en">Frontend Developer</p>
@@ -317,13 +366,22 @@
               </div>
             </li>
             <li class="group-item">
-              <img
-                class="group-item-img"
-                src="./images/team/team-3.jpg"
-                width="270"
-                height="260"
-                alt="наш маркетолог"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img3-lg@1x.jpg 1x, ./images/team/img3-lg@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img3-md@1x.jpg 1x, ./images/team/img3-md@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img3-sm@1x.jpg 1x, ./images/team/img3-sm@2x.jpg 2x"
+                />
+                <img class="group-item-img" src="./images/team/img3-sm@1x.jpg" alt="наш маркетолог" />
+              </picture>
+
               <div class="card">
                 <h3 class="group-title">Микола Тарасов</h3>
                 <p class="group-text" lang="en">Marketing</p>
@@ -384,13 +442,22 @@
               </div>
             </li>
             <li class="group-item">
-              <img
-                class="group-item-img"
-                src="./images/team/team-4.jpg"
-                width="270"
-                height="260"
-                alt="наш дизайнер"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img4-lg@1x.jpg 1x, ./images/team/img4-lg@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img4-md@1x.jpg 1x, ./images/team/img4-md@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img4-sm@1x.jpg 1x, ./images/team/img4-sm@2x.jpg 2x"
+                />
+                <img class="group-item-img" src="./images/team/img4-sm@1x.jpg" alt="наш дизайнер" />
+              </picture>
+
               <div class="card">
                 <h3 class="group-title">Михайло Єрмаков</h3>
                 <p class="group-text" lang="en">UI Designer</p>
@@ -508,84 +575,90 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer-main">
-<div class="footer-wrap">
-  <div class="footer-contacts">
-    <a class="logo-footer" href="./index.html"><span class="logo-ftr">Web</span>Studio</a>
-    <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
-    <ul class="footer-group--list">
-      <li class="adress-item">
-        <a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
-      </li>
-      <li class="adress-item">
-        <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
-      </li>
-    </ul>
-  </div>
-  <div class="footer-group">
-    <h3 class="footer-title">приєднуйтесь</h3>
-    <ul class="footer-list">
-      <li class="footer-item">
-        <a
-          class="footer-link"
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener norefferer"
-          aria-label="Instagram"
-        >
-          <svg class="footer-icon" width="20" height="20">
-            <use href="./images/icons/icons.svg#instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer-item">
-        <a
-          class="footer-link"
-          href="https://twitter.com"
-          target="_blank"
-          rel="noopener norefferer"
-          aria-label="Twitter"
-        >
-          <svg class="footer-icon" width="20" height="20">
-            <use href="./images/icons/icons.svg#twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer-item">
-        <a
-          class="footer-link"
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener norefferer"
-          aria-label="Facebook"
-        >
-          <svg class="footer-icon" width="20" height="20">
-            <use href="./images/icons/icons.svg#facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer-item">
-        <a
-          class="footer-link"
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener norefferer"
-          aria-label="LinkedIn"
-        >
-          <svg class="footer-icon" width="20" height="20">
-            <use href="./images/icons/icons.svg#linkedin"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
+        <div class="footer-wrap">
+          <div class="footer-contacts">
+            <a class="logo-footer" href="./index.html"><span class="logo-ftr">Web</span>Studio</a>
+            <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
+            <ul class="footer-group--list">
+              <li class="adress-item">
+                <a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
+              </li>
+              <li class="adress-item">
+                <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-group">
+            <h3 class="footer-title">приєднуйтесь</h3>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a
+                  class="footer-link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener norefferer"
+                  aria-label="Instagram"
+                >
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  class="footer-link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener norefferer"
+                  aria-label="Twitter"
+                >
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  class="footer-link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener norefferer"
+                  aria-label="Facebook"
+                >
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  class="footer-link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener norefferer"
+                  aria-label="LinkedIn"
+                >
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="footer-mail">
           <h3 class="footer-mail-title">Підпишіться на розсилку</h3>
 
           <form class="footer-form">
             <div class="footer_form-wrap">
               <label for="email">
-                <input type="email" name="email" id="email" class="email-form" placeholder="E-mail" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="email-form"
+                  placeholder="E-mail"
+                />
               </label>
             </div>
             <button type="submit" class="subscribe-btn">
@@ -663,62 +736,54 @@
         </form>
       </div>
     </div>
-<!-- Mobile menu -->
-<div class="menu-container js-menu-container" id="mobile-menu">
-  <button class="menu-toggle js-close-menu">
-   <svg width="40" height="40">
-    <use href="./images/icons/icons.svg#close_40px"></use>
-   </svg>
-  </button>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons/icons.svg#close_40px"></use>
+        </svg>
+      </button>
 
-  <ul class="mobile-nav">
-    <li class="mobile-nav__item">
-      <a
-        class="nav-mobile__link nav-mobile__link-active"
-        href="./index.html"
-        >Студія</a
-      >
-    </li>
-    <li class="mobile-nav__item">
-      <a class="nav-mobile__link" href="./portfolio.html">Портфоліо</a>
-    </li>
-    <li class="mobile-nav__item">
-      <a class="nav-mobile__link" href="">Контакти</a>
-    </li>
-  </ul>
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a class="nav-mobile__link nav-mobile__link-active" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="nav-mobile__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="nav-mobile__link" href="">Контакти</a>
+        </li>
+      </ul>
       <ul class="mobile-contacts">
-      <li class="mobile-contacts__item">
-        <a
-          class="mobile-contacts__link mobile-contacts__link-active"
-          href="tel:+380961111111"
-          >+38 096 111 11 11</a
-        >
-      </li>
-      <li class="mobile-contacts__item">
-        <a class="mobile-contacts__link" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-      </li>
-    </ul>
-    <ul class="mobile-socials">
-      <li class="mobile-socials_item">
-        <a class="mobile-socials_link">Instagram</a>
-      </li>
-      <li class="mobile-socials_item">
-        <a class="mobile-socials_link">Twitter</a>
-      </li>
-      <li class="mobile-socials_item">
-        <a class="mobile-socials_link">Facebook</a>
-      </li>
-      <li class="mobile-socials_item">
-        <a class="mobile-socials_link">LinkedIn</a>
-      </li>
-    </ul>
-</div>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts__link-active" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials_item">
+          <a class="mobile-socials_link">Instagram</a>
+        </li>
+        <li class="mobile-socials_item">
+          <a class="mobile-socials_link">Twitter</a>
+        </li>
+        <li class="mobile-socials_item">
+          <a class="mobile-socials_link">Facebook</a>
+        </li>
+        <li class="mobile-socials_item">
+          <a class="mobile-socials_link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
 
-<script src="./js/modal.js"></script>
-<!-- mobile script -->
-<script
+    <script src="./js/modal.js"></script>
+    <!-- mobile script -->
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
