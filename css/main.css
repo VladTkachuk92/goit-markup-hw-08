@@ -111,7 +111,7 @@ a {
   width: 100%;
   height: 100%;
   background-color: var(--main-white);
-  padding: 48px 84px 40px 40px;
+  padding: 48px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,10 +204,15 @@ a {
 
 .mobile-contacts__link-active {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 27px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 450px) {
+  .mobile-contacts__link-active {
+    font-size: 34px;
+  }
 }
 
 .menu-toggle {
@@ -253,10 +258,15 @@ a {
 .mobile-socials_link {
   display: block;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 450px) {
+  .mobile-socials_link {
+    font-size: 18px;
+  }
 }
 
 .header {
@@ -492,6 +502,7 @@ a {
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 30px;
+  max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -752,6 +763,11 @@ a {
 }
 
 .clients-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
       flex-basis: calc((100% - 30px) / 2);
 }
@@ -780,21 +796,11 @@ a {
           align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 210px;
+  width: 100%;
   height: 92px;
   fill: var(--icon-color);
   -webkit-transition: fill var(--anim), border var(--anim);
   transition: fill var(--anim), border var(--anim);
-}
-@media screen and (min-width: 768px) {
-  .clients-link {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients-link {
-    width: 170px;
-  }
 }
 
 .clients-link:hover,
